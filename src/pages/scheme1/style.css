@@ -1,0 +1,10 @@
+@import "@joint/plus/joint-plus.css";
+
+#diagram {
+    width: 100%;
+    height: 100%;
+  }
+
+  .dx-license {
+    display: none;
+  }

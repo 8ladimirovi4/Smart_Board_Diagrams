@@ -1,0 +1,199 @@
+
+
+
+
+.svg-node-container {
+    position: relative; /* Родительский контейнер, чтобы позиционировать дочерний элемент */
+    width: 100px; /* Ширина родительского блока */
+    height: 100px; /* Высота родительского блока */
+    display: flex;
+    justify-content: center; /* Центрируем фигуру по горизонтали */
+    align-items: center; /* Центрируем фигуру по вертикали */
+    background-color: transparent; /* Убираем фон у родителя */
+    border: none; /* Убираем границу у родителя */
+  }
+  
+  .svg-node {
+    position: relative;
+    width: 100%; /* Фигура будет занимать 100% от ширины родителя */
+    height: 100%; /* Фигура будет занимать 100% от высоты родителя */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Убираем фон у контейнера с SVG */
+    border: none; /* Убираем границу у контейнера с SVG */
+  }
+
+
+  .image-node img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .progress-node-container {
+    width: 150px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .progress-node-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: #4caf50;
+    transition: width 0.3s;
+  }
+
+  .dropdown-node {
+    width: 150px;
+    padding: 10px;
+    background: #f8f9fa;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-header {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .dropdown-select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .dropdown-select:focus {
+    outline: none;
+    border-color: #0056b3;
+  }
+
+  .table-node {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .custom-table th {
+    background: #007bff;
+    color: white;
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .custom-table td {
+    padding: 6px;
+    border: 1px solid #ddd;
+  }
+  
+  .custom-table input {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .custom-table input:focus {
+    outline: none;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  .tree-node h1{
+      font-size: large;
+  }
+  
+  .tree-node_link{
+    font-size: medium;
+    color: blue;
+  }
+  
+  .tree-node_link:hover{
+    color: rgba(0, 0, 255, 0.647);
+  }
+
+  .react-flow__node-rotatableNode {
+    border: 0;
+    box-shadow: 0;
+  }
+   
+  .rotatable-node {
+    transform-origin: center center;
+    box-sizing: border-box;
+  }
+   
+  .rotatable-node__handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #3367d9;
+    left: 50%;
+    top: -30px;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    cursor: alias;
+  }
+   
+  .rotatable-node__handle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background: #3367d9;
+    left: 4px;
+    top: 5px;
+  }
+
+  .graph-node {
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .graph-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .graph-container {
+    width: 100%;
+    height: 150px;
+  }
+  

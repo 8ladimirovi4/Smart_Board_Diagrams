@@ -1,4 +1,4 @@
-import ButtonComponent from '@/components/button/ButtonComponent';
+import ButtonComponent from '@/components/customButton/ButtonComponent';
 import DatatableComponent from 'components/datatable/DatatableComponent';
 import IconComponent from 'components/icon/IconComponent';
 import TreeComponent from 'components/tree/TreeComponent';

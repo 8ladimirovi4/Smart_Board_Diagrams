@@ -102,8 +102,8 @@ const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_H
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [plugin(), copyAndDeleteThemeAssets(), copyStaticAssets()],
-    //plugins: [plugin()],
+    //plugins: [plugin(), copyAndDeleteThemeAssets(), copyStaticAssets()],
+    plugins: [plugin()],
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url)),
@@ -115,31 +115,31 @@ export default defineConfig({
             '/joint-light-theme': path.resolve(__dirname, 'joint-light-theme'),
         }
     },
-    server: {
-          //host: '192.168.90.188', // remote access to host
-        proxy: {
-           '/api': {
-        target: 'https://localhost:7295',
-        secure: false
-      }
-        },
-        port: 5173, //default 5173
-        // https:  {
-        //     key: fs.readFileSync(keyFilePath),
-        //     cert: fs.readFileSync(certFilePath),
-        // }
-    },
-    assetsInclude: '**/*.svg',
-    build: {
-        emptyOutDir: false,
-        rollupOptions: {
-            output: {
-                assetFileNames: (assetInfo) => {
-                    const extension = assetInfo.name?.split('.').pop();
-                    const path = extension === 'ttf' ? 'fonts/' : '';
-                    return `assets/${path}[name].[ext]`;
-                }
-            },
-        }
-    }
+    // server: {
+    //       //host: '192.168.90.188', // remote access to host
+    //     proxy: {
+    //        '/api': {
+    //     target: 'https://localhost:7295',
+    //     secure: false
+    //   }
+    //     },
+    //     port: 5173, //default 5173
+    //     https:  {
+    //         key: fs.readFileSync(keyFilePath),
+    //         cert: fs.readFileSync(certFilePath),
+    //     }
+    // },
+    //assetsInclude: '**/*.svg',
+    // build: {
+    //     emptyOutDir: false,
+    //     rollupOptions: {
+    //         output: {
+    //             assetFileNames: (assetInfo) => {
+    //                 const extension = assetInfo.name?.split('.').pop();
+    //                 const path = extension === 'ttf' ? 'fonts/' : '';
+    //                 return `assets/${path}[name].[ext]`;
+    //             }
+    //         },
+    //     }
+    // }
 })

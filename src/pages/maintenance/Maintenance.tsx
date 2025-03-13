@@ -1,4 +1,4 @@
-import ButtonComponent from 'components/button/ButtonComponent';
+import ButtonComponent from '@/components/button/ButtonComponent';
 import { StyledButtonContainer, StyledMaintenanceColumn } from './styles';
 import { PageWrapper } from './styles';
 import { useNavigate } from 'react-router-dom';

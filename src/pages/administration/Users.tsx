@@ -1,4 +1,4 @@
-import ButtonComponent from 'components/button/ButtonComponent';
+import ButtonComponent from '@/components/button/ButtonComponent';
 import ChipComponent from 'components/chip/ChipComponent';
 import DatatableComponent from 'components/datatable/DatatableComponent';
 import DropdownComponent from 'components/dropdown/DropdownComponent';

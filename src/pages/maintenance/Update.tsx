@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { PageWrapper, StyledButtonContainer, StyledUpdateColumn } from './styles';
 import { NodeService } from './data';
 import DatatableComponent from 'components/datatable/DatatableComponent';
-import ButtonComponent from '@/components/button/ButtonComponent';
+import ButtonComponent from '@/components/customButton/ButtonComponent';
 
 const Update = () => {
   const [gridData, setGridData] = useState([]);

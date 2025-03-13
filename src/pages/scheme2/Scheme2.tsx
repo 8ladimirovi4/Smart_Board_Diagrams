@@ -1,7 +1,7 @@
 //diagram example
 
 import * as React from 'react';
-import Rappid from './Rappid';
+import Rappid from './rappid';
 import '@joint/plus/joint-plus.css';
 import './css/styles.scss';
 

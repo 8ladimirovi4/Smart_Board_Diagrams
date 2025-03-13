@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { PageWrapper, StyledSettingsColumn } from './styles';
 import { StyledButtonContainer } from './styles';
-import ButtonComponent from 'components/button/ButtonComponent';
+import ButtonComponent from '@/components/button/ButtonComponent';
 import { useState } from 'react';
 import ToastComponent from 'components/toast/ToastComponent';
 

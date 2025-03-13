@@ -1,4 +1,4 @@
-import ButtonComponent from 'components/button/ButtonComponent';
+import ButtonComponent from '@/components/button/ButtonComponent';
 import { PageWrapper, StyledButtonContainer, StyledProjectColumn } from './styles';
 
 const Project = () => {

@@ -35,7 +35,7 @@ import { DnDProvider, useDnD } from './DnDContext';
 import ZoomNode from './CustomNodes/ZoomNode';
 
 import DownloadButton from './toolbar/DownloadButton';
-import ButtonComponent from 'components/button/ButtonComponent';
+import ButtonComponent from '@/components/button/ButtonComponent';
 import { v4 } from 'uuid';
 
 const Scheme5 = () => {

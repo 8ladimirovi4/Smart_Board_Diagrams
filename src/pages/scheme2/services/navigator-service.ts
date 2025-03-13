@@ -69,9 +69,9 @@ const NavigatorElementView = dia.ElementView.extend({
 });
 
 export class NavigatorService {
-    toolbar: ui.Toolbar;
-    navigator: ui.Navigator;
-    scroller: ui.PaperScroller;
+    toolbar!: ui.Toolbar;
+    navigator!: ui.Navigator;
+    scroller!: ui.PaperScroller;
     transitionCanceled = false;
 
     constructor(private readonly element: HTMLElement) {}
